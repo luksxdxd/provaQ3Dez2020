@@ -1,0 +1,33 @@
+﻿@model encriptDecript.Models.TextoModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TextoModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Textoss)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Textoss)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CopyTextoss)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CopyTextoss)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Voltar a lsita", "Index")
+</p>
